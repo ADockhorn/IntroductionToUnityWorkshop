@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
+    public float speed = 1;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -15,6 +17,9 @@ public class PlayerMovement : MonoBehaviour {
         float verMovement = Input.GetAxis("Vertical");
 
         Vector3 currentPosition = this.transform.position;
-        this.transform.position = new Vector3(currentPosition.x + horMovement, currentPosition.y + verMovement, currentPosition.z);
+        this.transform.position = new Vector3(
+            currentPosition.x + horMovement * speed * Time.deltaTime, 
+            currentPosition.y + verMovement * speed * Time.deltaTime, 
+            currentPosition.z);
     }
 }
