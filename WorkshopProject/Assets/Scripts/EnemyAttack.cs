@@ -26,8 +26,8 @@ public class EnemyAttack : MonoBehaviour {
     {
         if (currentCoolDown <= 0 && collision.gameObject.CompareTag("Player"))
         {
-            //collision.gameObject.GetComponent<PlayerHealth>().ApplyDamage(damage);
-            Debug.Log("Attacking Player!");
+            collision.gameObject.GetComponent<PlayerHealth>().ApplyDamage(damage);
+            
             currentCoolDown = coolDown;
         }
     }
