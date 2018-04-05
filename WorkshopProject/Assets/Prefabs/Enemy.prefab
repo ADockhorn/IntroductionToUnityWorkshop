@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4103316053426280}
   - component: {fileID: 212620293867900596}
-  - component: {fileID: 114625563633679204}
   m_Layer: 0
   m_Name: Nose
   m_TagString: Untagged
@@ -40,9 +39,10 @@ GameObject:
   - component: {fileID: 58986630865299494}
   - component: {fileID: 114113285400243198}
   - component: {fileID: 114755413050603646}
+  - component: {fileID: 114822590002990626}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,17 +102,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   target: {fileID: 0}
---- !u!114 &114625563633679204
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1107335101939410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7039d12cbed8994478c1362a24679360, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114755413050603646
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,6 +113,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543028fed6e5ca74687bd07ec6476202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
+  coolDown: 1
+--- !u!114 &114822590002990626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1271273688436374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549e7c8f92fba2b49b0991588caf7240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialHealth: 100
 --- !u!212 &212337772472224442
 SpriteRenderer:
   m_ObjectHideFlags: 1
