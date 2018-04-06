@@ -96,9 +96,9 @@ MonoBehaviour:
   spawnPos: {fileID: 4342098344786622}
   bulletPrefab: {fileID: 114093671489698152, guid: f8ec01a4f89c53745be53636d0caff3c,
     type: 2}
-  ammo: 5
-  maxAmmo: 10
-  coolDownTimer: 1
+  ammo: 30
+  maxAmmo: 30
+  coolDownTimer: 0.25
 --- !u!212 &212482579607136028
 SpriteRenderer:
   m_ObjectHideFlags: 1

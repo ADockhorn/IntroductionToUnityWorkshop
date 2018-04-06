@@ -22,11 +22,18 @@ public class PlayerHealth : MonoBehaviour {
 
     }
 
+    public void AddHealth(float health)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + health, 0.0f, initialHealth);
+    }
+
     public void ApplyDamage(float damage)
     {
         currentHealth -= damage;
-        if (currentHealth < 0)
+        if (currentHealth <= 0.0f)
         {
+            currentHealth = 0.0f;
+
             Debug.Log("Player Died");
 
             // this allows us to test stuff easier!

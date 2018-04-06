@@ -50,7 +50,7 @@ public class Weapon : MonoBehaviour {
     {
         Destroy(this.gameObject);
     }
-    public void SetMuni(int value)
+    public void AddMuni(int value)
     {
         ammo += value;
         if(ammo > maxAmmo)

@@ -6,7 +6,7 @@ public class WeaponSpawner : MonoBehaviour {
 
     public Weapon startWeaponPrefab;
 
-    private Weapon curWeaponInstance;
+    public Weapon curWeaponInstance;
 
 	void Start () {
         curWeaponInstance = Instantiate(startWeaponPrefab, this.transform.position, Quaternion.identity, this.transform);
